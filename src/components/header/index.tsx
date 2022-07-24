@@ -6,28 +6,30 @@ import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../burger-menu";
 
 
+let lastScrollTop = 0;
+
+const eventOnScroll = () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollType = false;
+  if (scrollTop > lastScrollTop) {
+    scrollType = true;
+  } else {
+    scrollType = false;
+  }
+  lastScrollTop = scrollTop;
+  console.log(scrollType)
+  return scrollType;
+};
+
 
 export const Header = () => {
-
-
-  function set(
-    setScrollDown: Function,
-  ) {
-    let currentScrollY = window.scrollY;
-    let lastScroll = 0
-    window.addEventListener("scroll", () => {
-      setScrollDown(window.scrollY - currentScrollY <= lastScroll);
-      lastScroll = window.scrollY - currentScrollY
-    });
-  }
 
   const navigate = useNavigate();
   const [scrollDown, setScrollDown] = useState(false);
   
 
   useEffect(() => {
-    return () =>
-      set(setScrollDown);
+    return () =>window.addEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
   }, []);
 
 
