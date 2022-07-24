@@ -18,6 +18,7 @@ const eventOnScroll = () => {
   }
   lastScrollTop = scrollTop;
   console.log(scrollType)
+  console.log(scrollType)
   return scrollType;
 };
 
@@ -29,6 +30,7 @@ export const Header = () => {
   
 
   useEffect(() => {
+    window.removeEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
     return () =>window.addEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
   }, []);
 
