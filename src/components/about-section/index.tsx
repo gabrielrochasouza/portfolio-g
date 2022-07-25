@@ -1,5 +1,5 @@
 import { AboutContainer } from "./style";
-import React from 'react'
+import React from "react";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import {
   FaCss3,
@@ -61,13 +61,14 @@ const AboutSection = () => {
             a programação ocorreu na faculdade de Engenharia Mecânica, onde tive
             a matéria de Introdução a Computação, nela tive contato com a
             linguagem Fortran, e nessa matéria gostei muito de programar e senti
-            que tinha uma facilidade afinidade para programação. Na faculdade
-            tive oportunidade de atuar em um projeto onde tive o meu primeiro
+            que tinha uma facilidade e afinidade para programação. Na faculdade
+            tive a oportunidade de atuar em um projeto onde tive o meu primeiro
             contato com o desenvolvimento web, onde aprendi sobre HTML, CSS,
             Javascript e também desenvolvi alguns sites usando o Wordpress.
-            Atualmente, estou estudando desenvolvimento fullstack na Kenzie
-            Academy Brasil e pude desenvolver inúmeros projeto, trabalhar em
-            grupo e desenvolver e treinar minhas soft Skills.
+            Atualmente, terminei o curso de fullstack na Kenzie Academy Brasil
+            onde pude desenvolver inúmeros projeto, trabalhar em grupo e
+            desenvolver e treinar minhas soft Skills. E estou a procura de uma
+            oportunidade na área.
           </p>
           <p>Hardskills: {"  "}</p>
           <ul className="techs">
