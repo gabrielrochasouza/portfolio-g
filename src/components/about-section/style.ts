@@ -15,13 +15,16 @@ export const AboutContainer = styled.section`
         flex-wrap: wrap-reverse;
         @media (max-width:768px) {
             gap: 0px;
-            padding: 0;
+            padding: 30px 0;
         }
         h3 {
             color: black ;
         }
         .col-left{
             max-width: 700px;
+            @media (max-width:568px) {
+                padding: 20px;
+            }
             p,li{
                 font-size: 1.05rem;
                 font-weight: 500;
