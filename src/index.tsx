@@ -3,12 +3,28 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let lastScrollTop = 0;
+
+const eventOnScroll = () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollType = false;
+  if (scrollTop < lastScrollTop) {
+    scrollType = true;
+  } else {
+    scrollType = false;
+  }
+  lastScrollTop = scrollTop;
+  console.log(scrollType)
+  return scrollType;
+};
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App eventOnScroll={eventOnScroll} />
   </React.StrictMode>
 );
 
