@@ -3,6 +3,7 @@ import mainProjects from "../../components/projects-section/projects";
 import ProjectCard from "../../components/project-card";
 import Footer from "../../components/footer";
 import ContactSection from "../../components/contact-section";
+import React from 'react'
 import {useNavigate} from  'react-router-dom'
 
 const Projects = () => {

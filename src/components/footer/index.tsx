@@ -1,4 +1,5 @@
 import {Container} from './style'
+import React from 'react'
 
 const Footer = ()=>{
     return(

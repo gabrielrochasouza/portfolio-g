@@ -3,6 +3,7 @@ import { SectionContainer } from "./style";
 import mainProjects from "./projects";
 import { useNavigate } from "react-router-dom";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import React from 'react'
 import ReactIcon from "../../assets/svg/react-icon.svg"
 
 interface IProjects {

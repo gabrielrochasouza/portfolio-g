@@ -1,4 +1,5 @@
 import { IntroSec } from "./style";
+import React from 'react'
 import Icon from "../dev-pic/dev-pic";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";

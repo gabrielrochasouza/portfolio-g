@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { BurgerContainer } from "./style";
+import React from 'react'
 import { useNavigate } from "react-router-dom";
 
 const BurgerMenu = () => {

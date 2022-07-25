@@ -1,4 +1,5 @@
 import AOS from 'aos'
+import React from 'react'
 import WhatsappFixed from './components/whatsapp-fixed-icon';
 import Routes from './routes';
 import { BrowserRouter } from 'react-router-dom';

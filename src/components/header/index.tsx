@@ -1,4 +1,5 @@
 import Logo from "../logo";
+import React from 'react'
 import { Container } from "./style";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useNavigate } from "react-router-dom";

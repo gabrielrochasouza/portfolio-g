@@ -1,5 +1,6 @@
 import { FaWhatsapp } from 'react-icons/fa'
 import {IconContainer} from './style'
+import React from 'react'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const WhatsappFixed = ()=>{
