@@ -8,13 +8,13 @@ import Footer from "../../components/footer";
 
 const MainPage = () => {
   return (
-    <>
+    <div onScroll={()=>console.log('main')}>
       <IntroSection/>
       <AboutSection/>
       <ProjectSection/>
       <ContactSection/>
       <Footer/>
-    </>
+    </div>
   );
 };
 export default MainPage;
