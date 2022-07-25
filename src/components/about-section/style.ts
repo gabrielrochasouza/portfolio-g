@@ -18,7 +18,7 @@ export const AboutContainer = styled.section`
             padding: 30px 0;
         }
         h3 {
-            color: black ;
+            color: #fff ;
         }
         .col-left{
             max-width: 700px;

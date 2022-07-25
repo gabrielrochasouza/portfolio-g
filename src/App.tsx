@@ -57,7 +57,7 @@ function App() {
   
 
   useEffect(() => {
-    document.removeEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
+    // document.getElementById('root')?.removeEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
     return () =>document.addEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
   }, []);
 
