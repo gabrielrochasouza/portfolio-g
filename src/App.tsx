@@ -4,6 +4,25 @@ import Routes from './routes';
 import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
 import { Header } from './components/header';
+import { useEffect, useState } from 'react';
+
+
+let lastScrollTop = 0;
+
+const eventOnScroll = () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollType = false;
+  if (scrollTop > lastScrollTop) {
+    scrollType = true;
+  } else {
+    scrollType = false;
+  }
+  lastScrollTop = scrollTop;
+  console.log(scrollType)
+  return scrollType;
+};
+
+
 
 function App() {
   AOS.init();
@@ -32,11 +51,19 @@ function App() {
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
+
+  const [scrollDown, setScrollDown] = useState(false);
   
+
+  useEffect(() => {
+    // window.removeEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
+    return () =>window.addEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
+  }, []);
+
   return (
     <BrowserRouter>
       <GlobalStyle/>
-      <Header/>
+      <Header scrollDown={scrollDown} />
       <Routes/>
       <WhatsappFixed/>
     </BrowserRouter>
