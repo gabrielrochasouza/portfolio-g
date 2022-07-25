@@ -18,14 +18,14 @@ export const AboutContainer = styled.section`
             content:'';
             width: 40px;
             height: 40px;
-            background-color: black;
+            background-color: var(--bg-primary);
             position: absolute;
             top: -20px;
             transform: rotate(45deg);
         }
         @media (max-width:768px) {
             gap: 0px;
-            padding: 30px 0;
+            padding: 50px 0;
         }
         h3 {
             color: #fff ;
@@ -33,7 +33,7 @@ export const AboutContainer = styled.section`
         .col-left{
             max-width: 700px;
             @media (max-width:568px) {
-                padding: 20px;
+                padding: 40px 20px;
             }
             p,li{
                 font-size: 1.05rem;

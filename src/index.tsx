@@ -14,7 +14,6 @@ const eventOnScroll = () => {
     scrollType = false;
   }
   lastScrollTop = scrollTop;
-  console.log(scrollType)
   return scrollType;
 };
 

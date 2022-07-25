@@ -8,7 +8,7 @@ import Footer from "../../components/footer";
 
 const MainPage = () => {
   return (
-    <div onScroll={()=>console.log('main')}>
+    <div>
       <IntroSection/>
       <AboutSection/>
       <ProjectSection/>
