@@ -13,6 +13,16 @@ export const AboutContainer = styled.section`
         align-items: center;
         gap: 100px;
         flex-wrap: wrap-reverse;
+        position: relative;
+        ::after{
+            content:'';
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            position: absolute;
+            top: -20px;
+            transform: rotate(45deg);
+        }
         @media (max-width:768px) {
             gap: 0px;
             padding: 30px 0;
