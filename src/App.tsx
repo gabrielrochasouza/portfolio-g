@@ -12,7 +12,7 @@ let lastScrollTop = 0;
 const eventOnScroll = () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   let scrollType = false;
-  if (scrollTop > lastScrollTop) {
+  if (scrollTop < lastScrollTop) {
     scrollType = true;
   } else {
     scrollType = false;
@@ -56,14 +56,14 @@ function App() {
   
 
   useEffect(() => {
-    // window.removeEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
-    return () =>window.addEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
+    document.removeEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
+    return () =>document.addEventListener('scroll', ()=>setScrollDown(eventOnScroll()));
   }, []);
 
   return (
     <BrowserRouter>
       <GlobalStyle/>
-      <Header scrollDown={scrollDown} />
+      <Header scrollDown={scrollDown}/>
       <Routes/>
       <WhatsappFixed/>
     </BrowserRouter>

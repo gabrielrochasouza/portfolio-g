@@ -1,7 +1,6 @@
 import Logo from "../logo";
 import { Container } from "./style";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../burger-menu";
 
@@ -18,7 +17,7 @@ export const Header = ({scrollDown}: IHeader) => {
 
 
   return (
-    <Container scroll={scrollDown}>
+    <Container scroll={scrollDown} >
       <div className="container">
         <div
           onClick={() => {
