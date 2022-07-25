@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const AboutContainer = styled.section`
  
     background-color: var(--green-color);
-    padding: 40px 20px;
     .about-me{
         min-height: 100vh;
-        padding: 10px 10px;
+        padding: 35px;
         max-width: var(--max-c-w);
         margin: 0px auto 0px;
         display: flex;
