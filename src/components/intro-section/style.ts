@@ -33,7 +33,7 @@ export const IntroSec = styled.section`
     font-size: 4.2rem;
     font-weight: 600;
     @media (max-width:768px) {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
       
     }
   }
